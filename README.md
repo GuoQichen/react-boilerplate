@@ -1,3 +1,6 @@
 # react-boilerplate
-this is a simple react boilerplate
-React + ES6 + Babel + Webpack + ESlint
+this is a simple react boilerplate, React + ES6 + Babel + Webpack + ESlint
+## script
+```
+npm run build
+```
