@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { DatePicker } from 'antd'
+import 'antd/dist/antd.less'
 
-console.log('demo')
 class Hello extends React.Component {
     constructor(props) {
         super(props)
@@ -11,7 +12,7 @@ class Hello extends React.Component {
     }
 
     render() {
-        return <h1>Hello</h1>
+        return <DatePicker />
     }
 }
 

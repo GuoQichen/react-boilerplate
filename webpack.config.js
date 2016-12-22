@@ -14,6 +14,10 @@ module.exports = {
                 loader: 'babel',
                 include: __dirname + '/src/',
             },
-        ]
+            {
+                test: /\.less$/,
+                loader: 'style-loader!css-loader!less-loader',
+            },
+        ],
     },
 }
