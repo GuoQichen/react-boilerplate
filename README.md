@@ -5,4 +5,4 @@ this is a simple react boilerplate, React + ES6 + Babel + Webpack + ESlint
 npm install
 npm run build
 ```
-open http://localhost:8080 in browser
+open http://localhost:8000 in browser
