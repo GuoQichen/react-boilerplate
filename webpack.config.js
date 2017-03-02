@@ -1,5 +1,6 @@
 var path = require('path')
 var webpack = require('webpack')
+var HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
 	entry: path.join(__dirname, 'src/main.js'),
@@ -17,7 +18,7 @@ module.exports = {
 			{
 				test: /\.js$/,
 				loader: 'babel',
-				include: __dirname + '/src/',
+				include: path.join(__dirname, 'src'),
 			},
 			{
 				test: /\.less$/,
@@ -27,6 +28,9 @@ module.exports = {
 	},
 	devtool: 'source-map',
 	plugins: [
-		new webpack.HotModuleReplacementPlugin()
+		new webpack.HotModuleReplacementPlugin(),
+		new HtmlWebpackPlugin({
+			title: 'My App'
+		})
 	]
 }

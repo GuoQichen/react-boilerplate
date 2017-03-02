@@ -14,4 +14,8 @@ Welcome.propTypes = {
 	name: React.PropTypes.string
 }
 
+const divEle = document.createElement('div')
+divEle.id = 'root'
+document.body.appendChild(divEle)
+
 ReactDOM.render(<Welcome name="guoqichen" />, document.getElementById('root'))
